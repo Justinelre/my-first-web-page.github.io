@@ -3,92 +3,221 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Mojito</title>
+	<title>La Danse </title>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://kit.fontawesome.com/efc594edb8.js" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-	<div class="navbar">
-		<img src="images/Logo.png" class="logo">
+	<!-- HEADER -->
+
+	<!-- MODAL -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+	    	<div class="modal-content">
+	    		<div class="modal-header">
+	        		<h5 class="modal-title" id="exampleModalLabel">Let's Dance</h5>
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+	      		<div class="modal-body">
+	      			240 Avenue Jean Mermoz, 33320 Eysines
+	      			<br>
+	        		+33 5 56 50 10 48
+	        		<br>
+	        		<div class="modalLinks">
+			        	<a href="http://www.studioattitude.fr/?gclid=CjwKCAjw8pH3BRAXEiwA1pvMsUdyuUAkzkQHljqCOVvbQHnK0n4vlh6v8gerjRPMibZ5GAKKzY7j2RoCO1cQAvD_BwE"  target="_blank"><i class="fas fa-desktop"></i></a>
+	    				<a href="https://www.instagram.com/studio.attitude/" target="_blank"><i class="fab fa-instagram"></i></a>
+	    				<a href="https://www.facebook.com/Studio-Attitude-L-%C3%A9cole-de-Danse-188684773742/" target="_blank"><i class="fab fa-facebook"></i></a>
+	    				<a href="mailto: contact.letsdance@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+	        		</div>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>	
+
+	<div class="my-navbar">
+		<div class="logo">
+			<a href="index.html"><img src="images/logodanse2.png" class="logoImg"></a>
+		</div>
 		<div class="links">
-			<a href="" class="link">L'histoire</a>
-			<a href="" class="link">La recette</a>
-			<a href="" class="link">Vos réalisations</a>
+			<li class="link"><a href="#danse">La danse</a></li>
+			<li class="link"><a href="#histoire">L'histoire</a></li>
+			<li class="link"><a href="#types">Les différentes formes</a></li>
+			<li class="link"><a href="#celebrite">Les célèbres danseurs</a></li>
+
+			<!-- Button trigger modal -->
+			<button type="button" class="my-btn" data-toggle="modal" data-target="#exampleModal">
+				Contact
+			</button>
+		</div>
+	</div>
+	<!-- END HEADER -->
+
+	<!-- CONTENT -->
+	<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/banner.jpg);">
+		<div class="bannerContent">
+			<h1 class="bannerTitre">La Danse</h1>
+			<h2 class="bannerSoustitre">Un univers artistique haut en couleur...</h2>
 		</div>
 	</div>
 
-	<div class="cadre">
-		<h1>Mojito</h1>
-		<h2>Le super cokctail de l'été</h2>
+	<div id="danse"></div>
 
-		<img src="images/Mojito.jpg" alt="image de mojito" width="300px" class="avatar">
-		<br>
-
-		<a href="https://www.750g.com/mojito-r99211.htm" target="_blank" class="button">En savoir plus</a>
-	</div>
-
-	<div class="cadre">
-		<h3><strong>L'histoire du Mojito</strong></h3>
-
-		<p>La légende raconte que l'histoire du <bold>Mojito</bold> remonterait au début du 16e siècle lorsque le corsaire explorateur anglais Francis Drake, entre deux pillages de <i>La Havane</i>, appréciait siroter des feuilles de menthe pilées avec du tafia (rhum industriel). Cette tradition explique que des clients actuels demandent dans certains bars « give me a Drake » (« donnez moi un Drake » en anglais).
-		<br>
-		Au 20e siècle, la recette originelle évolue : le tafia est remplacé par du rhum et le citron vert agrémente le mélange. Ainsi est né le mojito connu aujourd’hui, et qui tire son nom du « mojo », une mixture à base de citron initialement destinée à rehausser le goût des aliments.
-		<br>
-		En 1920, le mojito devint un véritable emblème de la culture cubaine, et est élevé au rang de « cocktail national de Cuba » (le rhum de Cuba est un des principaux produits d'exportation de l'économie de Cuba).
-		<br>
-		Très apprécié par l’écrivain journaliste américain Ernest Hemingway qui venait régulièrement le déguster lorsqu'il vivait à Cuba entre 1939 et 1960, avec ses célèbres habitudes locales « mon Mojito à La Bodeguita del Medio, mon Daïquiri à la El Floridita » (Ernest Hemingway à Cuba)3. Le cocktail finit par s’exporter d’abord aux États-Unis, puis en Europe, avant d’être préparé dans la plupart des bars du monde entier4.
-		<br>
-		En France, il a été démocratisé à partir des années 1990 par une importante campagne marketing de la part de la marque de rhum Havana Club5.</p>
-	</div>
-
-	<div class="cadre">
-		<h3>La recette en vidéo</h3>
-
-		<iframe width="400" height="400" src="https://www.youtube.com/embed/qoBhhTcIKNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-	</div>
-	
-	<div class="display-flex">
-		<div class="cadre text-left">
-		<h4>Ingrédients</h4>
-
-		<ul>
-			<li>2cl de rhum blanc</li>
-			<li>1cl de sirop de sucre de canne</li>
-			<li>3 feuilles de menthe</li>
-			<li>1/2 citron vert</li>
-			<li>Eau Gazeuse (ou limonade)</li>
-			<li>Glaçons</li>
-		</ul>
-		</div>
-		<div class="cadre text-left">
-			<h4>Préparation</h4>
-
-			<ol>
-				<li>Etape 1 : Piler la Glace</li>
-				<li>Etape 2 : Glace Pilée<li>
-				<li>Etape 3 : Mettez les feuilles de menthe dans le verre</li>
-				<li>Etape 4 : Coupez le citron en morceaux</li>
-				<li>Etape 5 : Ajoutez le citron dans le verre</li>
-				<li>Etape 6 : Pilez le citron et la menthe avec un pilon à cocktail</li>
-				<li>Etape 7 : Ajoutez le sirop de sucre de canne</li>
-				<li>Etape 8 : Ajoutez le glace pilée</li>
-				<li>Etape 9 : Ajoutez le rhum</li>
-				<li>Etape 10 : Complétez avec l'eau gazeuse</li>
-				<li>Etape 11 : Mélangez</li>
-				<li>Etape 12 : Servez et dégustez</li>
-			</ol>
+	<div class="cadre definition">
+		<h2 class="definitionTitle">Qu'est-ce que la danse ?</h2>
+		<div class="definitionContent">
+			<p class="definitionText">La danse est l'action de mouvoir le corps humain constitué d'une suite de mouvements ordonnés, souvent rythmés par de la musique.
+			<br>
+			La danse peut être un art, un rite ou encore un divertissement. Elle exprime des idées et des émotions ou raconte une histoire.
+			<br>
+			La danse a en général un rapport direct dans l'histoire avec les autres arts (musique, peinture, sculpture, etc.).
+			<br>
+			Le corps peut réaliser toutes sortes d'actions comme tourner, se courber, s'étirer, ou sauter. En les combinant selon des dynamiques variées, on peut inventer une infinité de mouvements différents. Le corps passe à l'état d'objet, il sert à exprimer les émotions du danseur à travers ses mouvements, l'art devient le maître du corps.</p>	
 		</div>
 	</div>
-	
-	<div class="cadre">
-		<h3>Vos préparations</h3>
-		<img src="images/production1.jpg" alt="Mojito 1" class="production">
-		<img src="images/production2.jpg" alt="Mojito 2" class="production">
-		<img src="images/production3.jpg" alt="Mojito 3" class="production">
+
+	<div id="histoire"></div>
+
+	<div class="cadre histoire">
+		<h2 class="histoireTitle">L'histoire de la danse</h2>
+		<div class="histoireContent">		
+			<p class="histoireText">Les premières indications sur l'exécution de danses datent de la Préhistoire, au paléolithique, où des peintures rupestres attestent de l'existence de danses primitives.
+			<br>
+			Il s'agit avant tout d'un acte cérémoniel et rituel, adressé à une entité supérieure afin de :
+				<ul>
+					<li class="histoireText">Conjurer le sort (danse de la pluie).</li>
+					<li class="histoireText">Donner du courage (danse de la guerre ou de la chasse).</li>
+					<li class="histoireText">Plaire aux dieux (Antiquité égyptienne, grecque et romaine).</li>
+				</ul>
+			</p>
+			<p class="histoireText">La danse primitive, couplée aux chants et à la musique, avait aussi probablement la capacité de faire entrer les participants dans un état de transe.</p>
+		</div>
 	</div>
+
+	<div class="cadre evolution">
+		<h2 class="evolutionTitle">L'évolution de la danse</h2>
+		<div class="evolutionContent">
+			<iframe width="600" height="400" src="https://www.youtube.com/embed/uqHt2VeYJN4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+	</div>
+
+	<div id="types"></div>
+
+	<div class="cadre products">
+		<h2 class="productTitle">Les différentes formes de danse</h2>
+		<div class="productContent">
+			<div class="card" style="width: 20rem;">
+				<img src="images/danseclassique.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+			    	<h3 class="card-title-classique">La danse classique</h3>
+			    	<p class="card-text">La danse classique, également appelée ballet, est un type de danse né au 15e siècle. Elle a été importée en France par les Italiens.
+			    	<br>	
+					Les spectacles de danse classique sont principalement et typiquement les ballets.
+					<br>
+					La danse classique est un art difficile car les mouvements sont très précis et compliqués. C'est la musique classique qui accompagne les danseurs. En danse classique, les danseuses et danseurs vont généralement danser en 8 temps, ou en 6 temps (temps de valse), cela leur aide à être sur la musique.</p>
+				</div>
+			</div>
+
+			<div class="card" style="width: 20rem;">
+				<img src="images/dansemoderne.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+			    	<h3 class="card-title-moderne">La danse moderne</h3>
+			    	<p class="card-text">La danse moderne est un style de danse rythmée avec beaucoup de pas de danse. Cette danse a fait son apparition aux États-Unis et en Allemagne vers 1920. La danse moderne s'oppose à la danse classique, elle est née de la volonté de se libérer du cadre rigide qu'impose certaines danses, même si elles restent souples et donc agréable à danser. La danse moderne nous apprend à bouger sur le rythme. Bien sur, il ne faut pas croire que c'est une danse sans règles et des plus faciles, car, elle ne l'ai pas du tout. IL y a beaucoup de règles très difficiles à respecter et beaucoup d'accidents arrivent car cette danse est des plus compliqués quand on est pas habituée ! Bien sur, toutes les danses sont comme ça.</p>
+				</div>
+			</div>
+
+			<div class="card" style="width: 20rem;">
+				<img src="images/hiphop.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+			    	<h3 class="card-title-hip-hop">La danse hip-hop</h3>
+			    	<p class="card-text">Le hip-hop est un mouvement artistique né aux États-Unis dans les ghettos de New York - Bronx et Brooklyn en particulier - au début des années 70. Il s'est peu à peu diffusé dans le monde entier.
+			    	<br>
+			    	La danse hip-hop est acrobatique et comprend beaucoup de figures au sol. Elle est souvent ponctuée d'espèces de « luttes », sans violence mais consistant plutôt à faire le plus grand nombre de figures, les plus élaborées possibles.
+			    	<br>
+			    	Le hip-hop arrive en France au commencement des années 80, environ dix ans après son apparition aux États-Unis. C'est cependant au début des années 90 que le Hip-Hop se fait vraiment connaître du grand public, avec des groupes comme IAM ou MC Solaar qui sortent leurs premiers disques en 1992. De plus, beaucoup de radios en France diffusent du rap et du hip-hop.
+			    	</p>
+				</div>
+			</div>			
+		</div>				
+	</div>
+
+
+	<div id="celebrite"></div>
+
+	<div class="cadre celebrite">
+		<h2 class="celebriteTitle">Les célèbrités du monde de la danse</h2>
+		<div class="celebriteContent">
+			<div class="card-product">
+				<img src="images/rudolf.jpg" />
+				<div class="card-product-infos">
+			    	<h2>Rudolf Noureev</h2>
+			    	<p>Rudolf Noureev a souvent été désigné comme le seigneur de la danse. Né en 1938 en Union Soviétique et mort en 1993 dans les Hauts-de-Seine, Rudolf Noureev est connu et reconnu pour sa technique de danse proche de la perfection. Il devient directeur du Ballet de l’Opéra de Paris de 1983 à 1989 et laisse ainsi sa trace dans l'un des plus importants opéras du monde. 
+			    	<br>Considéré comme l’un des plus grands danseurs classiques de tous les temps, il a su allier ses répertoires classiques, contemporains et même baroques.</p>
+				</div>
+			</div>
+
+			<div class="card-product">
+				<img src="images/matt.jpg" />
+				<div class="card-product-infos">
+			    	<h2>Matt Mattox</h2>
+			    	<p>En 1972, Matt Mattox, américain d’origine s’installe en France. Largement inspiré par le style de Cole, il va codifier le jazz en développant un système de techniques d’isolations basé sur des exercices de coordination, de mobilisation, d’articulation de chaque partie du corps pour une meilleure connaissance et prise de conscience de celui-ci (système de danse qui engage à la fois le mental et le physique).</p>
+				</div>
+			</div>	
+			
+			<div class="card-product">
+				<img src="images/kamel.jpg" />
+				<div class="card-product-infos">
+			    	<h2>Kamel Ouali</h2>
+			    	<p>Le pionnier français du Hip Hop. Originaire du Maroc, Kamel Ouali est le célèbre chorégraphe de l’émission de télévision française « Star Academy ». Il reçoit sa formation entre la France et Los Angeles. Après avoir acquis toutes les connaissances sur le hip hop, il crée les chorégraphies les clips de nombreuses stars. Sa longue participation au sein de l'émission populaire des années 2000, Star Academy, lui a permis de se créer un vrai nom sur le territoire français. Sa pédagogie, sa patience, sa diversité et sa différence lui ont permis de devenir un grand chorégrahe de renom.</p>
+				</div>
+			</div>						
+		</div>
+	</div>
+
+	<div class="cadre map">
+		<h2 class="mapTitle">Le meilleur endroit pour danser</h2>
+		<div class="mapContent">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.0488657035335!2d-0.6680388848132257!3d44.86129998149019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288ed301950f%3A0xae4072a4b9edba38!2sStudio%20Attitude!5e0!3m2!1sfr!2sfr!4v1592036302763!5m2!1sfr!2sfr" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</div>
+
+	<div class="cadre formulaire">
+		<h2 class="formulaireTitle">Et maintenant un petit test pour voir si tu as tout retenu ?</h2>
+		<div class="formulaireContent">
+			<div class="typeform-widget" data-url="https://form.typeform.com/to/odJzmD" style="width: 600px; height: 400px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">
+			</div>
+		</div>
+	</div>
+	<!-- END CONTENT -->
+
+	<!-- FOOTER -->
+	<div class="footer">
+	  <div class="footer-links">
+	  	<a href="http://www.studioattitude.fr/?gclid=CjwKCAjw8pH3BRAXEiwA1pvMsUdyuUAkzkQHljqCOVvbQHnK0n4vlh6v8gerjRPMibZ5GAKKzY7j2RoCO1cQAvD_BwE" target="_blank"><i class="fas fa-desktop"></i></a>
+	    <a href="https://www.instagram.com/studio.attitude/" target="_blank"><i class="fab fa-instagram"></i></a>
+	    <a href="https://www.facebook.com/Studio-Attitude-L-%C3%A9cole-de-Danse-188684773742/" target="_blank"><i class="fab fa-facebook"></i></a>
+	    <a href="mailto: contact.letsdance@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+	  </div>
+	  <div class="footer-copyright">
+	    © 2020 J. LARRIERE
+	  </div>
+	</div>
+	<!-- END FOOTER -->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>	
 
 </body>
 
